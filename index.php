@@ -2,6 +2,8 @@
 <?php require('model/user-profile.php'); ?>
 <!DOCTYPE html>
 <head>
+    <title><?= $user_profile['name'] ?> - Profile</title>
+    <meta charset="UTF-8">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
 </head>
 <body>
@@ -27,19 +29,17 @@
                     <h4>Interests</h4>
                     <p class="flow-text">#Technology, #Cricket, #Kids</p>
                 </section>
-                        <section>
-            <h4>Random Wisdom</h4>
-            <div class="card-panel grey lighten-5 z-depth-0">
-              <blockquote class="flow-text">"<?php echo $random_quote['quote']; ?>"
-              <br/>
-              <cite><b>-<?= $random_quote['credits'] ?></b></cite>
-              </blockquote>
-          </span>
-        </div>
-            
-        </section>
+                <section>
+                    <h4>Random Wisdom</h4>
+                    <div class="card-panel grey lighten-5 z-depth-0">
+                        <blockquote class="flow-text">
+                            "<?php echo $random_quote['quote']; ?>"
+                            <br/>
+                            <cite><b>-<?= $random_quote['credits'] ?></b></cite>
+                        </blockquote>
+                    </div>
+                </section>
             </div>
         </div>
-
     </div>
 </body>
