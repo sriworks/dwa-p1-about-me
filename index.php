@@ -1,14 +1,18 @@
+<!-- Php Includes -->
 <?php require('lib/random-quote-gen.php'); ?>
 <?php require('model/user-profile.php'); ?>
 <!DOCTYPE html>
+
 <head>
     <title><?= $user_profile['name'] ?> - Profile</title>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
 </head>
+
 <body>
     <div class="container">
         <div class="row">
+            <!-- Column for Picture, Name and Title -->
             <div class="col s12 m4 flow-text">
                 <div class="card-panel white lighten-5 z-depth-0 medium">
                     <div class="card-image">
@@ -20,6 +24,8 @@
                     </div>
                 </div>
             </div>
+            
+            <!-- Column for Content -->
             <div class="col s12 m8">
                 <section>
                     <h4>About Me</h4>
