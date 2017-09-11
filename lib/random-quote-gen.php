@@ -1,11 +1,11 @@
 <?php
-
 /**
  * Generate a random quote from a list of hand picked quotes.
  *
  * @return Single quote object with two keys: 'quote' and 'credits'
  */
 function generate_random_quote(){
+    // List of handpicked quotes.
     $quotes = [
         [
             'quote' => 'Don\'t tell people your dreams, Show them!',
