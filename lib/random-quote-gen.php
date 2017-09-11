@@ -1,6 +1,5 @@
 <?php
 
-// List of random quotes.
 /**
  * Generate a random quote from a list of hand picked quotes.
  *
